@@ -1,9 +1,10 @@
+#Create a function that takes a list and returns a new list with unique elements of the first list.
 
-x = input("Enter a list :")
-x = x.split(',')
-x = list(x)
-ns = set(x)
-#3print(ns)
-nl = list(ns)
-print(nl)
+def unique_list(l):
+    x = []
+    for a in l:
+        if a not in x:
+            x.append(a)
+    return x
+print(unique_list([1,2,2,3]))
 
